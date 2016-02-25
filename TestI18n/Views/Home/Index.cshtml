@@ -6,8 +6,8 @@
 @using (Html.BeginForm())
 {
     <div class="jumbotron">
-        <h1>@TestI18n.App_GlobalResources.I18N.Hi</h1>
-        <h1>@TestI18n.App_GlobalResources.I18N.Name</h1>
+        <h1>@TestI18n.Models.CustomizedI18N.Hi</h1>
+        <h1>@TestI18n.Models.CustomizedI18N.Name</h1>
         
         <p>@Html.LabelFor(x => x.Hi)</p>
         <p>@Html.TextBoxFor(x => x.Hi, new { @class = "form-control" })</p>

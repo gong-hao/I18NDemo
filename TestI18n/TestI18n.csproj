@@ -140,6 +140,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CustomizedI18N.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\GetLang.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Models\HomeViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -108,6 +108,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_GlobalResources\I18N.zh-cn.designer.cs">
+      <DependentUpon>I18N.zh-cn.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\I18N.ja-jp.designer.cs">
+      <DependentUpon>I18N.ja-jp.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\I18N.zh-tw.designer.cs">
+      <DependentUpon>I18N.zh-tw.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\I18N.en-us.designer.cs">
+      <DependentUpon>I18N.en-us.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\I18N.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>I18N.resx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -115,6 +140,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\HomeViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -156,7 +182,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -164,6 +189,36 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_GlobalResources\I18N.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>I18N.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_GlobalResources\I18N.en-us.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>I18N.en-us.designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_GlobalResources\I18N.zh-tw.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>I18N.zh-tw.designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_GlobalResources\I18N.zh-cn.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>I18N.zh-cn.designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_GlobalResources\I18N.ja-jp.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>I18N.ja-jp.designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

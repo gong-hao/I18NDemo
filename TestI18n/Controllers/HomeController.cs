@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using TestI18n.Models;
 
 namespace TestI18n.Controllers
 {
@@ -10,7 +7,20 @@ namespace TestI18n.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            var model = new HomeViewModel();
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult Index(HomeViewModel homeViewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction("About");
+            }
+
+            return View(homeViewModel);
         }
 
         public ActionResult About()

@@ -16,6 +16,15 @@
         <p>@Html.LabelFor(x => x.Name)</p>
         <p>@Html.TextBoxFor(x => x.Name, new { @class = "form-control" })</p>
         <p>@Html.ValidationMessageFor(x => x.Name)</p>
+
+        <p>Point</p>
+        <p>@Html.TextBoxFor(x => x.Point, new { @class = "form-control" })</p>
+        <p>@Html.ValidationMessageFor(x => x.Point)</p>
+
+        <p>Someday</p>
+        <p>@Html.TextBoxFor(x => x.Someday, new { @class = "form-control" })</p>
+        <p>@Html.ValidationMessageFor(x => x.Someday)</p>
+
         <p><button class="btn btn-primary btn-lg">Submit</button></p>
 
         <div>@Html.ValidationSummary()</div>

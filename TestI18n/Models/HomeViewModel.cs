@@ -1,5 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
-using TestI18n.App_GlobalResources;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace TestI18n.Models
 {
@@ -12,5 +12,14 @@ namespace TestI18n.Models
         [Display(Name = "Name", ResourceType = typeof(CustomizedI18N))]
         [Required(ErrorMessageResourceName = "Required", ErrorMessageResourceType = typeof(CustomizedI18N))]
         public string Name { get; set; }
+
+        /*
+         * 你以為有 ValidationAttribute 世界就很和平的時候
+         * 大魔王就登場了 int DateTime
+         */
+
+        public int Point { get; set; }
+
+        public DateTime Someday { get; set; }
     }
 }

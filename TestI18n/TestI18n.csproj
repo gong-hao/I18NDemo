@@ -143,6 +143,7 @@
     <Compile Include="Models\CustomizedI18N.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Models\FilterableClientDataTypeModelValidatorProvider.cs" />
     <Compile Include="Models\GetLang.cs">
       <SubType>Code</SubType>
     </Compile>

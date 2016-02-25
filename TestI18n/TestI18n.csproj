@@ -148,6 +148,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Models\HomeViewModel.cs" />
+    <Compile Include="Models\I18nRequired.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

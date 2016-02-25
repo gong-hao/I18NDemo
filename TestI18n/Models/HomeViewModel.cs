@@ -6,11 +6,11 @@ namespace TestI18n.Models
     public class HomeViewModel
     {
         [Display(Name = "Hi", ResourceType = typeof(CustomizedI18N))]
-        [Required(ErrorMessageResourceName = "Required", ErrorMessageResourceType = typeof(CustomizedI18N))]
+        [I18nRequired]
         public string Hi { get; set; }
 
         [Display(Name = "Name", ResourceType = typeof(CustomizedI18N))]
-        [Required(ErrorMessageResourceName = "Required", ErrorMessageResourceType = typeof(CustomizedI18N))]
+        [I18nRequired]
         public string Name { get; set; }
 
         /*
